@@ -27,3 +27,15 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media screen and (max-width: 768px) {
+  .desktop-image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mobile-image {
+    display: none;
+  }
+}
