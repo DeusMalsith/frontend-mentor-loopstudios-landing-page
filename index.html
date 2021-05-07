@@ -22,8 +22,9 @@
   </head>
 
   <body>
-    <nav>
-      <a href="#"><img src="/images/logo.svg" alt="logo" /></a>
+    <nav class="main-nav">
+      <img class="mobile hamburger" src="/images/icon-hamburger.svg" alt="" />
+      <a class="nav-logo" href="#"><img src="/images/logo.svg" alt="logo" /></a>
       <a href="#">About</a>
       <a href="#">Careers</a>
       <a href="#">Events</a>
@@ -31,140 +32,152 @@
       <a href="#">Support</a>
     </nav>
     <main>
-      <div class="hero-image">
+      <div class="hero-container">
+        <img
+          class="desktop"
+          src="/images/desktop/image-hero.jpg"
+          alt="Hero image of person playing VR"
+        />
+        <img
+          class="mobile"
+          src="/images/mobile/image-hero.jpg"
+          alt="Hero image of person playing VR"
+        />
         <h1>Immersive experiences that deliver</h1>
       </div>
 
-      <section>
-        <img
-          class="desktop-image"
-          src="/images/desktop/image-interactive.jpg"
-          alt="Man wearing VR headset while pretending to be a monster"
-        />
-        <img
-          class="mobile-image"
-          src="/images/mobile/image-interactive.jpg"
-          alt="Man wearing VR headset while pretending to be a monster"
-        />
-        <h2>The leader in interactive VR</h2>
-        <p>
-          Founded in 2011, Loopstudios has been producing world-class virtual
-          reality projects for some of the best companies around the globe. Our
-          award-winning creations have transformed businesses through digital
-          experiences that bind to their brand.
-        </p>
-      </section>
-
-      <section>
-        <h3>Our creations</h3>
-        <button>See all</button>
-        <ul>
+      <div class="container">
+        <section>
           <img
-            class="desktop-image"
-            loading="lazy"
-            src="/images/desktop/image-deep-earth.jpg"
-            alt="Image of earth"
+            class="desktop"
+            src="/images/desktop/image-interactive.jpg"
+            alt="Man wearing VR headset while pretending to be a monster"
           />
           <img
-            class="mobile-image"
-            loading="lazy"
-            src="/images/mobile/image-deep-earth.jpg"
-            alt="Image of earth"
+            class="mobile"
+            src="/images/mobile/image-interactive.jpg"
+            alt="Man wearing VR headset while pretending to be a monster"
           />
-          <li>Deep earth</li>
-          <img
-            class="desktop-image"
-            loading="lazy"
-            src="/images/desktop/image-night-arcade.jpg"
-            alt="Skeeball with black light"
-          />
-          <img
-            class="mobile-image"
-            loading="lazy"
-            src="/images/mobile/image-night-arcade.jpg"
-            alt="Skeeball with black light"
-          />
-          <li>Night arcade</li>
-          <img
-            class="desktop-image"
-            loading="lazy"
-            src="/images/desktop/image-soccer-team.jpg"
-            alt="Socker player"
-          />
-          <img
-            class="mobile-image"
-            loading="lazy"
-            src="/images/mobile/image-soccer-team.jpg"
-            alt="Socker player"
-          />
-          <li>Soccer team VR</li>
-          <img
-            class="desktop-image"
-            loading="lazy"
-            src="/images/desktop/image-grid.jpg"
-            alt="Image of car with tire as primary focus"
-          />
-          <img
-            class="mobile-image"
-            loading="lazy"
-            src="/images/mobile/image-grid.jpg"
-            alt="Image of car with tire as primary focus"
-          />
-          <li>The grid</li>
-          <img
-            class="desktop-image"
-            loading="lazy"
-            src="/images/desktop/image-from-above.jpg"
-            alt="Birds-eye-view of a winding road"
-          />
-          <img
-            class="mobile-image"
-            loading="lazy"
-            src="/images/mobile/image-from-above.jpg"
-            alt="Birds-eye-view of a winding road"
-          />
-          <li>From up above VR</li>
-          <img
-            class="desktop-image"
-            loading="lazy"
-            src="/images/desktop/image-pocket-borealis.jpg"
-            alt="Borealis at night"
-          />
-          <img
-            class="mobile-image"
-            loading="lazy"
-            src="/images/mobile/image-pocket-borealis.jpg"
-            alt="Borealis at night"
-          />
-          <li>Pocket borealis</li>
-          <img
-            class="desktop-image"
-            loading="lazy"
-            src="/images/desktop/image-curiosity.jpg"
-            alt="The Curiosity mars rover"
-          />
-          <img
-            class="mobile-image"
-            loading="lazy"
-            src="/images/mobile/image-curiosity.jpg"
-            alt="The Curiosity mars rover"
-          />
-          <li>The curiosity</li>
-          <img
-            class="desktop-image"
-            loading="lazy"
-            src="/images/desktop/image-fisheye.jpg"
-            alt="Fisheye image of a body of water and a pier"
-          />
-          <img
-            class="mobile-image"
-            loading="lazy"
-            src="/images/mobile/image-fisheye.jpg"
-            alt="Fisheye image of a body of water and a pier"
-          />
-          <li>Make it fisheye</li>
-        </ul>
-      </section>
+          <h2>The leader in interactive VR</h2>
+          <p>
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </section>
+        <section>
+          <h3>Our creations</h3>
+          <button class="desktop">See all</button>
+          <ul>
+            <img
+              class="desktop"
+              loading="lazy"
+              src="/images/desktop/image-deep-earth.jpg"
+              alt="Image of earth"
+            />
+            <img
+              class="mobile"
+              loading="lazy"
+              src="/images/mobile/image-deep-earth.jpg"
+              alt="Image of earth"
+            />
+            <li>Deep earth</li>
+            <img
+              class="desktop"
+              loading="lazy"
+              src="/images/desktop/image-night-arcade.jpg"
+              alt="Skeeball with black light"
+            />
+            <img
+              class="mobile"
+              loading="lazy"
+              src="/images/mobile/image-night-arcade.jpg"
+              alt="Skeeball with black light"
+            />
+            <li>Night arcade</li>
+            <img
+              class="desktop"
+              loading="lazy"
+              src="/images/desktop/image-soccer-team.jpg"
+              alt="Socker player"
+            />
+            <img
+              class="mobile"
+              loading="lazy"
+              src="/images/mobile/image-soccer-team.jpg"
+              alt="Socker player"
+            />
+            <li>Soccer team VR</li>
+            <img
+              class="desktop"
+              loading="lazy"
+              src="/images/desktop/image-grid.jpg"
+              alt="Image of car with tire as primary focus"
+            />
+            <img
+              class="mobile"
+              loading="lazy"
+              src="/images/mobile/image-grid.jpg"
+              alt="Image of car with tire as primary focus"
+            />
+            <li>The grid</li>
+            <img
+              class="desktop"
+              loading="lazy"
+              src="/images/desktop/image-from-above.jpg"
+              alt="Birds-eye-view of a winding road"
+            />
+            <img
+              class="mobile"
+              loading="lazy"
+              src="/images/mobile/image-from-above.jpg"
+              alt="Birds-eye-view of a winding road"
+            />
+            <li>From up above VR</li>
+            <img
+              class="desktop"
+              loading="lazy"
+              src="/images/desktop/image-pocket-borealis.jpg"
+              alt="Borealis at night"
+            />
+            <img
+              class="mobile"
+              loading="lazy"
+              src="/images/mobile/image-pocket-borealis.jpg"
+              alt="Borealis at night"
+            />
+            <li>Pocket borealis</li>
+            <img
+              class="desktop"
+              loading="lazy"
+              src="/images/desktop/image-curiosity.jpg"
+              alt="The Curiosity mars rover"
+            />
+            <img
+              class="mobile"
+              loading="lazy"
+              src="/images/mobile/image-curiosity.jpg"
+              alt="The Curiosity mars rover"
+            />
+            <li>The curiosity</li>
+            <img
+              class="desktop"
+              loading="lazy"
+              src="/images/desktop/image-fisheye.jpg"
+              alt="Fisheye image of a body of water and a pier"
+            />
+            <img
+              class="mobile"
+              loading="lazy"
+              src="/images/mobile/image-fisheye.jpg"
+              alt="Fisheye image of a body of water and a pier"
+            />
+            <li>Make it fisheye</li>
+            <button class="mobile">See all</button>
+          </ul>
+        </section>
+      </div>
     </main>
 
     <footer>
@@ -191,5 +204,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/DeusMalsith">DeusMalsith</a>.
     </div>
+
+    <script src="/app.js"></script>
   </body>
 </html>
