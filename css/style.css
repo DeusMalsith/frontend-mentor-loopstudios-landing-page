@@ -24,7 +24,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: var(--ff-josefin);
   font-weight: 300;
 }
@@ -33,20 +34,34 @@ img {
   width: 100%;
 }
 
+section h2 {
+  padding: 5rem 0 1.5rem;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+section p {
+  text-align: center;
+  color: var(--color-dark-gray);
+  padding: 0 1.5rem;
+  line-height: 1.7;
+  margin-bottom: 10.5rem;
+}
+
+section h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  margin-bottom: 5rem;
+}
+
 footer img {
   width: auto;
 }
 
-.container {
-  padding: 9.6rem 2.4rem;
-}
-
-.main-nav {
-  position: absolute;
-}
-
-.hamburger {
-  display: none;
+.hero-container {
+  position: relative;
 }
 
 .hero-container h1 {
@@ -63,6 +78,38 @@ footer img {
 
 .main-nav img {
   width: auto;
+}
+
+.creations-wrapper {
+  position: relative;
+}
+
+.creations-wrapper img {
+  margin-bottom: 2rem;
+}
+
+.creations-wrapper h4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-family: "Josefin Sans";
+  font-size: 2.5rem;
+  width: 13rem;
+}
+
+.container {
+  padding: 9.6rem 2.4rem;
+}
+
+.main-nav {
+  position: absolute;
+  z-index: 10;
+}
+
+.hamburger {
+  display: none;
 }
 
 .attribution {
