@@ -88,7 +88,7 @@ footer img {
 
 .footer-logo {
   width: 15rem;
-  padding: 3.3rem 0 2rem;
+  padding: 3.5rem 0 1rem;
 }
 
 .footer-social {
@@ -105,6 +105,20 @@ footer img {
 
 .hero-container {
   position: relative;
+  height: 88.5vmax;
+  background-image: url(../images/mobile/image-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* A fallback for safari browsers with the "background-attachment fixed" bug */
+
+@media not all and (min-resolution: 0.001dpcm) {
+  .hero-container {
+    background-attachment: scroll;
+  }
 }
 
 .hero-container h1 {
@@ -119,8 +133,11 @@ footer img {
   line-height: 0.98;
 }
 
-.main-nav img {
-  width: auto;
+.nav-logo {
+  position: absolute;
+  width: 57%;
+  top: 4rem;
+  left: 2.4rem;
 }
 
 .creations-wrapper {
@@ -167,10 +184,6 @@ footer img {
   z-index: 10;
 }
 
-.hamburger {
-  display: none;
-}
-
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -189,11 +202,10 @@ footer img {
   }
 
   .hamburger {
-    position: relative;
-  }
-
-  .nav-logo {
-    position: relative;
+    position: absolute;
+    top: 4.2rem;
+    right: -8.8rem;
+    width: auto;
   }
 
   .hero-container {
@@ -210,6 +222,7 @@ footer img {
   .button-mobile {
     width: 15.7rem;
     height: 4rem;
+    margin-top: 1rem;
     border: 1px solid var(--color-black);
     background-color: var(--color-white);
     font-family: "Alata";
@@ -220,6 +233,10 @@ footer img {
 
 @media screen and (min-width: 769px) {
   .mobile {
+    display: none;
+  }
+
+  .hamburger {
     display: none;
   }
 }
