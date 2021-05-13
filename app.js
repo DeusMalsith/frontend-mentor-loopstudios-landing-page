@@ -10,7 +10,7 @@ const menuStateChange = () => {
   showNav.classList.toggle("show-nav");
 };
 
-const lockScroll = () => {
+const lockScrollToggle = () => {
   //   This keeps the body from scrolling when the menu is displayed (fixes a bug where you can scroll the menu and logo off screen)
   if (document.body.style.overflowY === "hidden") {
     document.body.style.overflowY = "auto";
@@ -19,8 +19,20 @@ const lockScroll = () => {
   }
 };
 
-(hamburger.onclick = menuStateChange), lockScroll;
+const disableLockScroll = () => {
+  if (document.body.style.overflowY === "hidden") {
+    document.body.style.overflowY = "auto";
+  }
+};
+
+hamburger.onclick = () => {
+  lockScrollToggle();
+  menuStateChange();
+};
 
 linkList.forEach((link) => {
-  link.onclick = menuStateChange;
+  link.onclick = () => {
+    menuStateChange();
+    disableLockScroll();
+  };
 });
