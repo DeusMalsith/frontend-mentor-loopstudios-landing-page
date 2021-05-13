@@ -32,7 +32,7 @@ button:hover {
   cursor: pointer;
 }
 
-a:hover::after {
+a::after {
   background-color: #efefef;
   bottom: -10px;
   content: "";
@@ -41,6 +41,11 @@ a:hover::after {
   left: 50%;
   position: absolute;
   transform: translate(-50%, 0);
+  width: 0;
+  transition: width 0.15s;
+}
+
+a:hover::after {
   width: 50%;
 }
 
