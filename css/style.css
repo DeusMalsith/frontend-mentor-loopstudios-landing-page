@@ -114,6 +114,10 @@ footer img {
   padding: 0 0.8rem;
 }
 
+.footer-social-container {
+  width: 100%;
+}
+
 .hero-container {
   position: relative;
   height: 88.5vmax;
