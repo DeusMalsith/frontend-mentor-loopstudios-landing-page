@@ -316,7 +316,7 @@ footer img {
     all: unset;
     position: absolute;
     right: 0;
-    bottom: 5vh;
+    top: 9vh;
     font-size: 1.22vw;
   }
 
@@ -436,7 +436,7 @@ footer img {
 
   .desktop-button {
     width: 10.6vmax;
-    height: 4vh;
+    height: 2.9vmax;
     border: 1px solid var(--color-black);
     background-color: var(--color-white);
     font-family: "Alata";
