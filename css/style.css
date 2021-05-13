@@ -241,6 +241,10 @@ footer img {
 }
 
 @media screen and (max-width: 768px) {
+  a:hover::after {
+    all: unset;
+  }
+
   footer {
     display: flex;
     flex-direction: column;
