@@ -353,6 +353,7 @@ footer img {
     justify-content: space-between;
     height: 15.9vh;
     padding: 0 11.3vw;
+    overflow-y: hidden;
   }
 
   footer nav {
