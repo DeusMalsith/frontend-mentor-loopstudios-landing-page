@@ -20,7 +20,6 @@ body {
   font-size: 1.5rem;
   font-family: var(--ff-alata);
   font-weight: 400;
-  overflow-y: auto;
 }
 
 a {
@@ -40,32 +39,17 @@ img {
   width: 100%;
 }
 
-section h2 {
-  padding: 5rem 0 1.5rem;
-  font-size: 3.2rem;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-section p {
-  text-align: center;
-  color: var(--color-dark-gray);
-  line-height: 1.7;
-  width: clamp(70%, 84%, 84%);
-  margin: 0 auto 8.5rem;
-}
-
-section h3 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 3.2rem;
-  margin-bottom: 5rem;
-}
-
 .creations-section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.creations-section h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  margin-bottom: 5rem;
 }
 
 footer {
@@ -81,6 +65,10 @@ footer nav {
   text-align: center;
   height: 33rem;
   justify-content: space-evenly;
+}
+
+footer p {
+  text-align: center;
 }
 
 footer img {
@@ -140,6 +128,21 @@ footer img {
   top: 3.7rem;
   left: 2.4rem;
   z-index: 10;
+}
+
+.interactive-vr-container h2 {
+  padding: 5rem 0 1.5rem;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.interactive-vr-container p {
+  text-align: center;
+  color: var(--color-dark-gray);
+  line-height: 1.7;
+  width: clamp(70%, 84%, 84%);
+  margin: 0 auto 8.5rem;
 }
 
 .creations-wrapper {
@@ -218,6 +221,7 @@ footer img {
 
   .close-button {
     display: none;
+    padding-right: 2px;
   }
 
   .ham-button {
@@ -279,11 +283,194 @@ footer img {
 }
 
 @media screen and (min-width: 769px) {
+  footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 15.9vh;
+    padding: 0 11.3vw;
+  }
+
+  footer nav {
+    all: unset;
+    width: 100%;
+  }
+
+  footer nav a {
+    position: relative;
+    top: 9vh;
+    font-size: 1.2vmax;
+    padding-right: 1vw;
+  }
+
+  footer nav a:nth-child(1) {
+    padding-right: 0;
+  }
+
+  footer section {
+    width: 100%;
+    position: relative;
+  }
+
+  footer p {
+    all: unset;
+    position: absolute;
+    right: 0;
+    bottom: 5vh;
+    font-size: 1.22vw;
+  }
+
+  .footer-logo {
+    position: absolute;
+    top: -5vh;
+    padding: unset;
+    width: 10vw;
+    padding-right: -1vw;
+  }
+
+  .footer-social {
+    all: unset;
+    position: absolute;
+    right: 0;
+    top: 3.7vh;
+  }
+
+  .footer-social img {
+    width: 1.6vw;
+  }
+
+  .relative {
+    position: relative;
+  }
+
   .mobile {
     display: none;
   }
 
   .hamburger {
     display: none;
+  }
+
+  .hero-container {
+    height: 45.1vmax;
+    background-image: url(../images/desktop/image-hero.jpg);
+    background-attachment: scroll;
+  }
+
+  .hero-container h1 {
+    top: 34.6%;
+    left: 11%;
+    padding: 2.7% 3% 2%;
+    width: 45.6%;
+    font-size: 5vw;
+  }
+
+  .nav-logo {
+    left: 11.4%;
+    margin-top: 4.6%;
+    top: 0;
+    width: 13.5vw;
+  }
+
+  .nav-list {
+    display: flex;
+    list-style: none;
+    right: 10.1vmax;
+    width: 28.5%;
+    height: 1rem;
+    margin-top: 5%;
+    font-size: 1.2vw;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-list li {
+    padding: 0 2%;
+  }
+
+  .container {
+    padding: 10.97% 11.18% 12.6% 11.31%;
+  }
+
+  .image-interactive {
+    width: 65.4%;
+  }
+
+  .interactive-vr-container {
+    position: absolute;
+    width: 50%;
+    height: 65%;
+    padding: 8% 0 0 8%;
+    top: 36%;
+    left: 51%;
+    background: var(--color-white);
+    z-index: 2;
+  }
+
+  .interactive-vr-container h2 {
+    font-size: 3.35vw;
+    padding: 0;
+    text-align: left;
+  }
+
+  .interactive-vr-container p {
+    padding: 0;
+    margin: 0;
+    width: 46ch;
+    text-align: left;
+    font-size: 1.05vw;
+    margin-top: 7%;
+  }
+
+  .creations-section {
+    margin-top: 18.4rem;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: unset;
+  }
+
+  .creations-section h3 {
+    font-size: 3.4vw;
+  }
+
+  .desktop-button {
+    width: 10.6vmax;
+    height: 4vh;
+    border: 1px solid var(--color-black);
+    background-color: var(--color-white);
+    font-family: "Alata";
+    text-transform: uppercase;
+    letter-spacing: 0.4vw;
+    font-size: 1.05vmax;
+  }
+
+  .creations-grid {
+    display: grid;
+    width: 77.5vw;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 28px;
+    grid-row-gap: 29px;
+  }
+
+  .creations-wrapper {
+    margin-bottom: 0;
+  }
+
+  .the-grid {
+    width: 6vw;
+  }
+
+  .creations-wrapper h4 {
+    top: unset;
+    left: 16.3%;
+    bottom: 7.6%;
+    font-size: 2vw;
+    width: 11vw;
+  }
+
+  .creations-wrapper::after {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.522), transparent);
   }
 }

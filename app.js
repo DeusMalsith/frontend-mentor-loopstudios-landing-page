@@ -2,14 +2,14 @@ const hamburger = document.querySelector(".hamburger");
 const hamButton = document.querySelector(".ham-button");
 const closeButton = document.querySelector(".close-button");
 const showNav = document.querySelector(".nav-list");
-const link = document.querySelector(".nav-list-link");
-const links = document.querySelectorAll(".nav-list-link");
+const linkList = document.querySelectorAll(".nav-list-link");
 
 const menuStateChange = () => {
   hamButton.classList.toggle("displayed");
   closeButton.classList.toggle("displayed");
   showNav.classList.toggle("show-nav");
 
+  //   This keeps the body from scrolling when the menu is displayed (fixes a bug where you can scroll the menu and logo off screen)
   if (document.body.style.overflowY === "hidden") {
     document.body.style.overflowY = "auto";
   } else {
@@ -19,6 +19,6 @@ const menuStateChange = () => {
 
 hamburger.onclick = menuStateChange;
 
-links.forEach((link) => {
+linkList.forEach((link) => {
   link.onclick = menuStateChange;
 });
